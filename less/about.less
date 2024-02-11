@@ -4,7 +4,6 @@
   padding-left: 10px;
   padding-right: 10px;
   flex-direction: column;
-  z-index: -2;
   .about-bg-image {
     position: absolute;
     object-fit: cover;
@@ -12,7 +11,6 @@
     top: 0;
     height: 840px;
     width: 485px;
-    z-index: -1;
   }
   .about-title-section {
     padding-top: 115px;
@@ -40,11 +38,11 @@
       width: 160px;
       height: 50px;
       border-radius: 100px;
-      background-color: @btn-color;
       transition: 0.2s;
       color: @text-color;
       font-size: 18px;
       line-height: 26px;
+      background-color: @btn-color;
       &:hover {
         background-color: @btn-hovered-color;
       }
@@ -55,7 +53,7 @@
     gap: 85px;
     flex-wrap: wrap;
     margin-left: 10%;
-    margin-bottom: 115px;
+    margin-bottom: 90px;
     .first-tech {
       width: 267px;
       .first-tech-icon {
