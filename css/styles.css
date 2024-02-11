@@ -132,7 +132,7 @@ input::-webkit-inner-spin-button {
 }
 .container {
   max-width: 1400px;
-  min-width: 400px;
+  min-width: 420px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -156,22 +156,22 @@ input::-webkit-inner-spin-button {
   font-size: 15px;
   white-space: nowrap;
   margin-right: 47px;
+  margin-bottom: 20px;
 }
-.header .navigation .navigation-link:last-of-type {
-  margin-right: 36px;
-}
-.header .navigation .navigation-btn {
+.header .welcome-btn {
   padding: 12px 30px;
+  margin-right: 35px;
   font-size: 18px;
   background-color: #e93a7d;
   color: #fff;
+  font-weight: 300;
   line-height: 26px;
   border-radius: 100px;
   width: 115px;
   height: 50px;
   transition: 0.2s;
 }
-.header .navigation .navigation-btn:hover {
+.header .welcome-btn:hover {
   background-color: #d71862;
 }
 .welcome {
@@ -186,9 +186,6 @@ input::-webkit-inner-spin-button {
   padding-bottom: 120px;
   padding-left: 16%;
 }
-.welcome .welcome-titles-container {
-  margin-right: 16%;
-}
 .welcome .welcome-titles-container .welcome-title {
   max-width: 830px;
   font-weight: 700;
@@ -199,9 +196,14 @@ input::-webkit-inner-spin-button {
 }
 .welcome .welcome-titles-container .welcome-description {
   max-width: 650px;
-  font-weight: 500;
+  font-weight: 300;
   font-size: 22px;
   line-height: 32px;
+}
+@media (max-width: 800px) {
+  .welcome {
+    padding-left: 20px;
+  }
 }
 .gallery {
   width: 100%;
@@ -319,7 +321,7 @@ input::-webkit-inner-spin-button {
   margin-bottom: 11px;
 }
 .videos .videos-more-section p {
-  font-weight: 400;
+  font-weight: 300;
   font-size: 16px;
   line-height: 26px;
   opacity: 70%;
@@ -336,6 +338,7 @@ input::-webkit-inner-spin-button {
   margin-left: 30px;
 }
 .videos .videos-more-section .first-video .first-video-bg {
+  cursor: pointer;
   width: 170px;
   height: 110px;
   background: no-repeat center / 100% url("../assets/first-vid.png");
@@ -360,6 +363,7 @@ input::-webkit-inner-spin-button {
   margin-left: 30px;
 }
 .videos .videos-more-section .second-video .second-video-bg {
+  cursor: pointer;
   width: 170px;
   height: 110px;
   background: no-repeat center / 100% url("../assets/second-vid.png");
@@ -406,7 +410,7 @@ input::-webkit-inner-spin-button {
   font-weight: 500;
   font-size: 22px;
   line-height: 32px;
-  color: #15143966;
+  color: #1514399d;
   margin-bottom: 46px;
 }
 .about .about-title-section .about-btn {
@@ -417,6 +421,7 @@ input::-webkit-inner-spin-button {
   color: #fff;
   font-size: 18px;
   line-height: 26px;
+  font-weight: 300;
   background-color: #e93a7d;
 }
 .about .about-title-section .about-btn:hover {
@@ -450,7 +455,7 @@ input::-webkit-inner-spin-button {
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
-  color: #15143966;
+  color: #1514399d;
 }
 .about .about-tech-section .second-tech {
   width: 239px;
@@ -471,7 +476,7 @@ input::-webkit-inner-spin-button {
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
-  color: #15143966;
+  color: #1514399d;
 }
 @media (max-width: 1215px) {
   .about-bg-image {
@@ -499,6 +504,8 @@ input::-webkit-inner-spin-button {
 }
 .tariffs .tariffs-switcher {
   margin-bottom: 60px;
+  position: relative;
+  left: -10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -569,7 +576,7 @@ input::-webkit-inner-spin-button {
   flex-direction: column;
 }
 .tariffs .tariffs-cards .tariffs-opt .opt-info .opt-title-container {
-  font-weight: 700;
+  font-weight: 500;
   font-size: 22px;
   line-height: 32px;
   margin-bottom: 16px;
@@ -579,7 +586,7 @@ input::-webkit-inner-spin-button {
   align-items: center;
 }
 .tariffs .tariffs-cards .tariffs-opt .opt-info .opt-description {
-  font-weight: 400;
+  font-weight: 300;
   font-size: 16px;
   line-height: 26px;
   margin-bottom: 70px;
@@ -589,7 +596,7 @@ input::-webkit-inner-spin-button {
   color: #fff;
   width: 270px;
   height: 50px;
-  font-weight: 500;
+  font-weight: 300;
   font-size: 18px;
   line-height: 26px;
   border-radius: 100px;
@@ -619,7 +626,7 @@ input::-webkit-inner-spin-button {
   flex-direction: column;
 }
 .tariffs .tariffs-cards .tariffs-pro .pro-info .pro-title-container {
-  font-weight: 700;
+  font-weight: 500;
   font-size: 22px;
   line-height: 32px;
   margin-bottom: 16px;
@@ -629,22 +636,155 @@ input::-webkit-inner-spin-button {
   align-items: center;
 }
 .tariffs .tariffs-cards .tariffs-pro .pro-info .pro-description {
-  font-weight: 400;
+  font-weight: 300;
   font-size: 16px;
   line-height: 26px;
-  margin-bottom: 70px;
+  margin-bottom: 42px;
 }
 .tariffs .tariffs-cards .tariffs-pro .pro-info .pro-btn {
   border: 2px solid #ebeaed;
   color: #fff;
   width: 270px;
   height: 50px;
-  font-weight: 500;
+  font-weight: 300;
   font-size: 18px;
   line-height: 26px;
   border-radius: 100px;
   transition: 0.2s;
 }
 .tariffs .tariffs-cards .tariffs-pro .pro-info .pro-btn:hover {
-  background-color: #15143966;
+  background-color: #1514399d;
+}
+.feedback-modal {
+  min-height: 697px;
+  max-width: 570px;
+  min-width: 400px;
+  background-color: #222228;
+  padding: 48px 50px;
+  border-radius: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+.feedback-modal::backdrop {
+  background-color: #00000080;
+  z-index: 5;
+}
+.feedback-modal .feedback-modal-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  gap: 16px;
+}
+.feedback-modal .feedback-modal-container .feedback-modal-title {
+  color: #fff;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 54px;
+}
+.feedback-modal .feedback-modal-container .feedback-modal-description {
+  color: #ffffff80;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 21px;
+  margin-bottom: 56px;
+}
+.feedback-modal .feedback-modal-container .feedback-modal-form {
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.feedback-modal .feedback-modal-container .feedback-modal-form .string-input {
+  height: 40px;
+  width: 95%;
+  background-color: #ffffff00;
+  border-bottom: 1px solid #ffffff80;
+  margin-bottom: 40px;
+  color: #fff;
+  font-weight: 300;
+}
+.feedback-modal .feedback-modal-container .feedback-modal-form .checkbox-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.feedback-modal .feedback-modal-container .feedback-modal-form .checkbox-label .checkbox-input {
+  opacity: 0;
+}
+.feedback-modal .feedback-modal-container .feedback-modal-form .checkbox-label .custom-checkbox {
+  height: 24px;
+  width: 24px;
+  min-width: 24px;
+  border: 1px solid gray;
+  display: block;
+  position: relative;
+  background-color: #fff;
+  margin-right: 10px;
+  border-radius: 6px;
+}
+.feedback-modal .feedback-modal-container .feedback-modal-form .checkbox-label [type="checkbox"]:checked + span:before {
+  display: inline-block;
+  content: " ";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: -1px;
+  left: -1px;
+  background-color: #e93a7d;
+  border-radius: 6px;
+}
+.feedback-modal .feedback-modal-container .feedback-modal-form .checkbox-label .checkbox-description {
+  font-size: 16px;
+  color: #ffffff80;
+  max-width: 400px;
+}
+.feedback-modal .feedback-modal-container .feedback-modal-form .modal-btn {
+  width: 95%;
+  height: 71px;
+  background-color: #e93a7d;
+  color: #fff;
+  transition: 0.2s;
+  border-radius: 60px;
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
+.feedback-modal .feedback-modal-container .feedback-modal-form .modal-btn:hover {
+  background-color: #d71862;
+}
+.modal-complete {
+  min-height: 200px;
+  max-width: 570px;
+  min-width: 400px;
+  background-color: #222228;
+  padding: 48px 50px;
+  border-radius: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+.modal-complete::backdrop {
+  background-color: #00000080;
+  z-index: 5;
+}
+.modal-complete .complete-modal-title {
+  color: #fff;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 54px;
+}
+.modal-complete .complete-modal-description {
+  color: #ffffff80;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 21px;
 }

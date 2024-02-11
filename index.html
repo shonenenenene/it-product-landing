@@ -9,11 +9,11 @@
   <body>
     <header class="header container">
       <nav class="navigation">
-        <a class="navigation-link" href="#" target="_blank">Изображения</a>
-        <a class="navigation-link" href="#" target="_blank">Видео</a>
+        <a class="navigation-link" href="#gallery">Изображения</a>
+        <a class="navigation-link" href="#videos">Видео</a>
         <a class="navigation-link" href="#" target="_blank">3D модели</a>
-        <button class="navigation-btn">Войти</button>
       </nav>
+      <button class="welcome-btn">Войти</button>
     </header>
     <main class="main container">
       <section class="welcome">
@@ -27,7 +27,7 @@
           </h5>
         </div>
       </section>
-      <section class="gallery">
+      <section class="gallery" id="gallery">
         <div class="gallery-row gallery-row1">
           <div></div>
           <div></div>
@@ -41,7 +41,7 @@
           <div></div>
         </div>
       </section>
-      <section class="videos">
+      <section class="videos" id="videos">
         <h3 class="videos-title">Поможем сделать ваш продукт уникальным</h3>
         <div class="videos-play-section">
           <img
@@ -132,7 +132,13 @@
                 Редактируйте фото и видео в режиме онлайн. Создавайте
                 одностраничные сайты из готовых компонентов
               </p>
-              <button class="opt-btn">Начать бесплатно</button>
+              <button
+                class="opt-btn"
+                type="button"
+                onclick="window.feedback.showModal()"
+              >
+                Начать бесплатно
+              </button>
             </div>
           </div>
           <div class="tariffs-pro">
@@ -150,11 +156,70 @@
                 Редактируйте фото и видео в режиме онлайн. Создавайте
                 одностраничные и многостраничные сайты из готовых компонентов,
               </p>
-              <button class="pro-btn">Начать бесплатно</button>
+              <button
+                class="pro-btn"
+                type="button"
+                onclick="window.feedback.showModal()"
+              >
+                Начать бесплатно
+              </button>
             </div>
           </div>
         </div>
       </section>
+
+      <dialog class="feedback-modal" id="feedback" aria-label="Оставить заявку">
+        <div class="feedback-modal-container">
+          <h3 class="feedback-modal-title">Оставить заявку</h3>
+          <p class="feedback-modal-description">
+            Менеджеры перезвонят или напишут в течение дня. Поможем определиться
+            и протестировать продукт. Без спама и навязчивости
+          </p>
+          <form
+            class="feedback-modal-form"
+            method="dialog"
+            onsubmit="window.feedback.close(); window.complete.showModal()"
+          >
+            <input
+              required
+              class="string-input"
+              type="email"
+              placeholder="Email"
+            />
+            <input required class="string-input" placeholder="Иван Иванов" />
+            <input
+              required
+              class="string-input"
+              type="number"
+              placeholder="Телефон"
+            />
+            <button class="modal-btn" type="submit">Отправить</button>
+            <label class="checkbox-label"
+              ><input
+                required
+                class="checkbox-input"
+                type="checkbox"
+                id="terms"
+              /><span class="custom-checkbox"></span>
+              <span class="checkbox-description"
+                >Я соглашаюсь на обработку персональных данных и присоединяюсь к
+                регламенту СБИС</span
+              ></label
+            >
+          </form>
+        </div>
+      </dialog>
+      <dialog
+        class="modal-complete"
+        id="complete"
+        aria-label="Спасибо за заявку"
+        onclick="window.complete.close()"
+      >
+        <h3 class="complete-modal-title">Спасибо за заявку</h3>
+        <p class="complete-modal-description">
+          Наши менеджеры свяжутся с вами в течении 5 минут
+        </p>
+      </dialog>
     </main>
   </body>
 </html>
