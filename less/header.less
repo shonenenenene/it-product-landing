@@ -1,0 +1,38 @@
+.header {
+  z-index: 9;
+  background-color: @text-color;
+  position: fixed;
+  height: 90px;
+  top: 0;
+  left: 0;
+  right: 0;
+  .flexed(flex-end, center);
+
+  .navigation {
+    margin: 20px 35px;
+    font-weight: 500;
+    .navigation-link {
+      font-size: 15px;
+      white-space: nowrap;
+      margin-right: 47px;
+      &:last-of-type {
+        margin-right: 36px;
+      }
+    }
+
+    .navigation-btn {
+      padding: 12px 30px;
+      font-size: 18px;
+      background-color: @btn-color;
+      color: @text-color;
+      line-height: 26px;
+      border-radius: 100px;
+      width: 115px;
+      height: 50px;
+      transition: 0.2s;
+      &:hover {
+        background-color: @btn-hovered-color;
+      }
+    }
+  }
+}

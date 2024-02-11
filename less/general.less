@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+
+@btn-color: #e93a7d;
+@btn-hovered-color: #d71862;
+@btn-border-color: #ebeaed;
+
+@text-color: #fff;
+@additional-text-color: #1e0e62;
+@light-text-color: #15143966;
+@nav-text-color: #1b1b1c;
+
+@bg-color: @text-color;
+@bg-second-color: #222228;
+@bg-image-color: #2f1893;
+@bg-cards-color: #34343d;
+
+@toggle-color-active: #25dac5;
+@toggle-color-disabled: #ababab;
+
+* {
+  font-family: "DM Sans", sans-serif;
+}
+
+.container {
+  max-width: 1400px;
+  min-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flexed (@jc, @ai) {
+  display: flex;
+  justify-content: @jc;
+  align-items: @ai;
+}

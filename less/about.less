@@ -1,0 +1,108 @@
+.about {
+  position: relative;
+  background-color: @bg-color;
+  padding-left: 10px;
+  padding-right: 10px;
+  flex-direction: column;
+  z-index: -2;
+  .about-bg-image {
+    position: absolute;
+    object-fit: cover;
+    right: 0;
+    top: 0;
+    height: 840px;
+    width: 485px;
+    z-index: -1;
+  }
+  .about-title-section {
+    padding-top: 115px;
+    margin-left: 10%;
+    margin-bottom: 67px;
+    margin-right: 10px;
+    max-width: 570px;
+
+    .about-title {
+      font-weight: 700;
+      font-size: 42px;
+      line-height: 52px;
+      letter-spacing: -0.4px;
+      color: @additional-text-color;
+      margin-bottom: 32px;
+    }
+    .about-description {
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 32px;
+      color: @light-text-color;
+      margin-bottom: 46px;
+    }
+    .about-btn {
+      width: 160px;
+      height: 50px;
+      border-radius: 100px;
+      background-color: @btn-color;
+      transition: 0.2s;
+      color: @text-color;
+      font-size: 18px;
+      line-height: 26px;
+      &:hover {
+        background-color: @btn-hovered-color;
+      }
+    }
+  }
+  .about-tech-section {
+    .flexed(start, center);
+    gap: 85px;
+    flex-wrap: wrap;
+    margin-left: 10%;
+    margin-bottom: 115px;
+    .first-tech {
+      width: 267px;
+      .first-tech-icon {
+        width: 54px;
+        height: 54px;
+        margin-bottom: 25px;
+      }
+      .first-tech-title {
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 32px;
+        color: @additional-text-color;
+        margin-bottom: 25px;
+      }
+      .first-tech-description {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: @light-text-color;
+      }
+    }
+    .second-tech {
+      width: 239px;
+      .second-tech-icon {
+        width: 54px;
+        height: 54px;
+        margin-bottom: 25px;
+      }
+      .second-tech-title {
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 32px;
+        color: @additional-text-color;
+        margin-bottom: 25px;
+      }
+      .second-tech-description {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: @light-text-color;
+      }
+    }
+  }
+}
+
+@media (max-width: 1215px) {
+  .about-bg-image {
+    opacity: 0;
+  }
+}

@@ -1,0 +1,110 @@
+.videos {
+  padding-top: 100px;
+  padding-left: 10px;
+  padding-right: 10px;
+  min-height: 1020px;
+  background-color: @bg-second-color;
+  color: @text-color;
+  .flexed(start, center);
+  flex-direction: column;
+  .videos-title {
+    max-width: 770px;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 52px;
+    letter-spacing: -0.4px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .videos-play-section {
+    border-radius: 10px;
+    margin-bottom: 90px;
+    position: relative;
+    .flexed(center, center);
+    .videos-preview {
+      max-height: 440px;
+      width: 770px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .videos-btn {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      background: no-repeat right 45% bottom 50%
+        url("/assets/icons/mini-play.png");
+      background-color: @btn-color;
+      transition: 0.2s;
+      &:hover {
+        background-color: @btn-hovered-color;
+      }
+    }
+  }
+
+  .videos-more-section {
+    margin-bottom: 100px;
+    h6 {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 26px;
+      letter-spacing: 2px;
+      margin-bottom: 11px;
+    }
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      opacity: 70%;
+    }
+    .flexed(center, center);
+    flex-wrap: wrap;
+    gap: 55px;
+    .first-video {
+      padding-left: 10px;
+      padding-right: 10px;
+      .flexed(center, start);
+      .first-video-description {
+        width: 200px;
+        margin-left: 30px;
+      }
+      .first-video-bg {
+        width: 170px;
+        height: 110px;
+        background: no-repeat center/100% url("/assets/first-vid.png");
+        .flexed(center, center);
+        .first-video-play {
+          width: 16px;
+          height: 20px;
+          background: no-repeat center/100% url("/assets/icons/mini-play.png");
+        }
+      }
+    }
+    .second-video {
+      padding-left: 10px;
+      padding-right: 10px;
+      .flexed(center, start);
+      .second-video-description {
+        width: 200px;
+        margin-left: 30px;
+      }
+      .second-video-bg {
+        width: 170px;
+        height: 110px;
+        background: no-repeat center/100% url("/assets/second-vid.png");
+        .flexed(center, center);
+        .second-video-play {
+          width: 16px;
+          height: 20px;
+          background: no-repeat center/100% url("/assets/icons/mini-play.png");
+        }
+      }
+    }
+  }
+}

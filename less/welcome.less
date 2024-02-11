@@ -1,0 +1,29 @@
+.welcome {
+  background-image: url("../assets/bg.png");
+  background-color: @bg-image-color;
+  height: 952px;
+  color: @text-color;
+  .flexed(end, start);
+  flex-direction: column;
+  padding-bottom: 120px;
+  padding-left: 16%;
+
+  .welcome-titles-container {
+    margin-right: 16%;
+    .welcome-title {
+      max-width: 830px;
+      font-weight: 700;
+      font-size: 58px;
+      letter-spacing: -1px;
+      line-height: 70px;
+      margin-bottom: 24px;
+    }
+
+    .welcome-description {
+      max-width: 650px;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 32px;
+    }
+  }
+}
